@@ -22,32 +22,37 @@ export default class Forms extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label>Name:-</label>
-        <input
-          type="text"
-          value={this.state.firstName}
-          name="firstName"
-          onChange={this.handleChange}
-        />
-        <br /> <br />
-        <label>Age:-</label>
-        <input
-          type="text"
-          value={this.state.age}
-          name="age"
-          onChange={this.handleChange}
-        />
-        <label>write something</label>
-        <textarea
-          name="area"
-          value={this.state.area}
-          onChange={this.handleChange}
-        />
-        <br />
-        <button>Submit</button>
-        <p>{this.state.area}</p>
-      </form>
+      <div className="card m-3">
+        <h2 className="card-header">React Form</h2>
+        <div className="card-body ">
+          <form onSubmit={this.handleSubmit}>
+            <label>Name:-</label>
+            <input
+              type="text"
+              value={this.state.firstName}
+              name="firstName"
+              onChange={this.handleChange}
+            />
+            <br /> <br />
+            <label>Age:-</label>
+            <input
+              type="text"
+              value={this.state.age}
+              name="age"
+              onChange={this.handleChange}
+            />
+            <label>write something</label>
+            <textarea
+              name="area"
+              value={this.state.area}
+              onChange={this.handleChange}
+            />
+            <br />
+            <button className="btn btn-primary">Submit</button>
+            <p>{this.state.area}</p>
+          </form>
+        </div>
+      </div>
     );
   }
 }
