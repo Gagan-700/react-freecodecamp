@@ -18,6 +18,7 @@ export default class Forms extends React.Component {
   }
   handleSubmit() {
     console.log(this.state);
+    alert(JSON.stringify(this.state, null, 4));
   }
   render() {
     return (
