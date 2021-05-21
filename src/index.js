@@ -6,4 +6,4 @@ import App from "./App";
 import FetchApi from "./FetchApi";
 import Forms from "./Forms";
 
-ReactDOM.render(<Forms />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

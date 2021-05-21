@@ -1,14 +1,13 @@
 const todoData = [
   {
-    text:"Check box data 1"
+    text: 'English'
   },
   {
-    text:"Check box data 2"
+    text: 'Math'
   },
   {
-    text:"Check box data 3"
+    text: 'Hindi'
   }
+];
 
-]
-
-export default todoData
+export default todoData;
